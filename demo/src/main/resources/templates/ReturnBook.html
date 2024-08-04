@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" >
+    <title>Return Book</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <form th:action="@{/api/Books/ReturnBookUser}"  method="get">
+        <div class="mb-3">
+            <label for="BookID" class="form-label">Book ID</label>
+            <input type="text" class="form-control" id="BookID" name="BookID" placeholder="Enter Book Id">
+        </div>
+        <button type="submit" class="btn btn-primary">Return</button>
+    </form>
+</div>
+</body>
+</html>

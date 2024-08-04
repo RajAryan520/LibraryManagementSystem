@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" >
+    <title>Delete Book</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <form th:action="@{/api/UserSection/DeleteUserAdmin}"  method="post">
+        <div class="mb-3">
+            <label for="UserID" class="form-label">User ID</label>
+            <input type="text" class="form-control" id="UserID" name="UserID" placeholder="Enter User Id">
+        </div>
+        <button type="submit" class="btn btn-primary">Delete</button>
+    </form>
+</div>
+</body>
+</html>
